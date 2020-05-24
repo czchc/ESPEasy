@@ -503,6 +503,33 @@ To create/register a plugin, you have to :
     #define USES_P016      // IR
 #endif
 
+// AirMon RevA by czchc -----------------
+#ifdef PLUGIN_SET_AIRMON_A
+    #define PLUGIN_DESCR  "AirMon RevA"
+
+    // #define PLUGIN_SET_ONLY_SWITCH
+    // #define PLUGIN_SET_ONLY_TEMP_HUM
+    #define CONTROLLER_SET_STABLE
+    // #define NOTIFIER_SET_STABLE
+
+    #define USES_P026   // SysInfo
+
+    // CONTROLLER_SET_STABLE
+/*     // #define USES_C001   // Domoticz HTTP
+    // #define USES_C002   // Domoticz MQTT
+    // #define USES_C003   // Nodo telnet
+    // #define USES_C004   // ThingSpeak
+    #define USES_C005   // Home Assistant (openHAB) MQTT
+    // #define USES_C006   // PiDome MQTT
+    // #define USES_C007   // Emoncms
+    #define USES_C008   // Generic HTTP
+    // #define USES_C009   // FHEM HTTP
+    #define USES_C010   // Generic UDP
+    #define USES_C013   // ESPEasy P2P network */
+
+    #define USES_P090   // CCS811 TVOC/eCO2 Sensor
+    #define USES_P072   // HDC1080
+#endif
 
 // Generic ESP32 -----------------------------
 #ifdef PLUGIN_SET_GENERIC_ESP32
